@@ -1,0 +1,277 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Grid-ometer</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+   <link rel="stylesheet" href="css/build_pf.min.css"/>
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <div class="wrapper">
+        <header>
+            <h1>Grid-ometer</h1></header>
+        <noscript>This site requires javascript to be enabled.</noscript>
+        <div class="row">
+    <section class="col_span_8_of_12">
+        <form>
+            <p>Make your grid...</p>
+            <fieldset>
+                <legend>Step 1: set the maximum width of the site</legend>
+                <input type="range" min="320" max="1400" step="10" id="siteWidth" name="siteWidth" value="600" class="slider">
+                <p>Your site will have a maximum width of
+                    <output for="siteWidth" id="siteW">600</output>px</p>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Step 2: set the max number of columns</legend>
+                <input type="range" min="1" max="24" step="1" id="siteColumns" value="12" oninput="outputUpdate(value)" />
+                <p>Your site will have a maximum width of
+                    <output for="siteColumns" id="siteCol">12</output> columns</p>
+            </fieldset>
+        </form>
+    </section>
+    <section class="col_span_4_of_12">4/12</section>
+</div>
+
+        <div class="row">
+    <section class="col_span_12_of_12">12/12</section>
+</div>
+        <div class="row">
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+        </div>
+        <div class="row">
+            <section class="col_span_2_of_12">2/12</section>
+            <section class="col_span_2_of_12">2/12</section>
+            <section class="col_span_2_of_12">2/12</section>
+            <section class="col_span_2_of_12">2/12</section>
+            <section class="col_span_2_of_12">2/12</section>
+            <section class="col_span_2_of_12">2/12</section>
+        </div>
+        <div class="row">
+    <section class="col_span_1_of_12">1/12</section>
+    <section class="col_span_1_of_12">1/12</section>
+    <section class="col_span_1_of_12">1/12</section>
+    <section class="col_span_1_of_12">1/12</section>
+    <section class="col_span_1_of_12">1/12</section>
+    <section class="col_span_1_of_12">1/12</section>
+    <section class="col_span_1_of_12">1/12</section>
+    <section class="col_span_1_of_12">1/12</section>
+    <section class="col_span_1_of_12">1/12</section>
+    <section class="col_span_1_of_12">1/12</section>
+    <section class="col_span_1_of_12">1/12</section>
+    <section class="col_span_1_of_12">1/12</section>
+</div>
+        <div class="row">
+            <section class="col_span_3_of_12">3/12</section>
+            <section class="col_span_3_of_12">3/12</section>
+            <section class="col_span_3_of_12">3/12</section>
+            <section class="col_span_3_of_12">3/12</section>
+
+        </div>
+     <div class="row">
+    <section class="col_span_1_of_12">1/12</section>
+    <section class="col_span_1_of_12">1/12</section>
+    <section class="col_span_1_of_12">1/12</section>
+    <section class="col_span_1_of_12">1/12</section>
+    <section class="col_span_1_of_12">1/12</section>
+    <section class="col_span_1_of_12">1/12</section>
+    <section class="col_span_1_of_12">1/12</section>
+    <section class="col_span_1_of_12">1/12</section>
+    <section class="col_span_1_of_12">1/12</section>
+    <section class="col_span_1_of_12">1/12</section>
+    <section class="col_span_1_of_12">1/12</section>
+    <section class="col_span_1_of_12">1/12</section>
+</div>
+        <div class="row">
+            <section class="col_span_4_of_12">4/12</section>
+            <section class="col_span_4_of_12">4/12</section>
+            <section class="col_span_4_of_12">4/12</section>
+        </div>
+         <div class="row">
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+        </div>
+        <div class="row">
+            <section class="col_span_5_of_12">5/12</section>
+            <section class="col_span_7_of_12">7/12</section>
+
+        </div>
+        <div class="row">
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+        </div>
+        <div class="row">
+            <section class="col_span_6_of_12">6 /12</section>
+            <section class="col_span_6_of_12">6 /12</section>
+
+        </div>
+        <div class="row">
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+        </div>
+        <div class="row">
+            <section class="col_span_7_of_12">7/12</section>
+            <section class="col_span_5_of_12">5/12</section>
+        </div>
+        <div class="row">
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+        </div>
+        <div class="row">
+            <section class="col_span_8_of_12">8/12</section>
+            <section class="col_span_4_of_12">4/12</section>
+        </div>
+        <div class="row">
+    <section class="col_span_1_of_12">1/12</section>
+    <section class="col_span_1_of_12">1/12</section>
+    <section class="col_span_1_of_12">1/12</section>
+    <section class="col_span_1_of_12">1/12</section>
+    <section class="col_span_1_of_12">1/12</section>
+    <section class="col_span_1_of_12">1/12</section>
+    <section class="col_span_1_of_12">1/12</section>
+    <section class="col_span_1_of_12">1/12</section>
+    <section class="col_span_1_of_12">1/12</section>
+    <section class="col_span_1_of_12">1/12</section>
+    <section class="col_span_1_of_12">1/12</section>
+    <section class="col_span_1_of_12">1/12</section>
+</div>
+        <div class="row">
+            <section class="col_span_9_of_12">9/12</section>
+            <section class="col_span_3_of_12">3/12</section>
+        </div>
+       <div class="row">
+    <section class="col_span_1_of_12">1/12</section>
+    <section class="col_span_1_of_12">1/12</section>
+    <section class="col_span_1_of_12">1/12</section>
+    <section class="col_span_1_of_12">1/12</section>
+    <section class="col_span_1_of_12">1/12</section>
+    <section class="col_span_1_of_12">1/12</section>
+    <section class="col_span_1_of_12">1/12</section>
+    <section class="col_span_1_of_12">1/12</section>
+    <section class="col_span_1_of_12">1/12</section>
+    <section class="col_span_1_of_12">1/12</section>
+    <section class="col_span_1_of_12">1/12</section>
+    <section class="col_span_1_of_12">1/12</section>
+</div>
+        <div class="row">
+            <section class="col_span_10_of_12">10/12</section>
+            <section class="col_span_2_of_12">2/12</section>
+        </div>
+        <div class="row">
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+        </div>
+        <div class="row">
+            <section class="col_span_11_of_12">11/12</section>
+            <section class="col_span_1_of_12">1/12</section>
+        </div>
+        <div class="row">
+    <section class="col_span_1_of_12">1/12</section>
+    <section class="col_span_1_of_12">1/12</section>
+    <section class="col_span_1_of_12">1/12</section>
+    <section class="col_span_1_of_12">1/12</section>
+    <section class="col_span_1_of_12">1/12</section>
+    <section class="col_span_1_of_12">1/12</section>
+    <section class="col_span_1_of_12">1/12</section>
+    <section class="col_span_1_of_12">1/12</section>
+    <section class="col_span_1_of_12">1/12</section>
+    <section class="col_span_1_of_12">1/12</section>
+    <section class="col_span_1_of_12">1/12</section>
+    <section class="col_span_1_of_12">1/12</section>
+</div>
+        <div class="row">
+            <section class="col_span_12_of_12">12/12</section>
+        </div>
+    </div>
+
+    <!--<script src="https://code.jquery.com/jquery-{{JQUERY_VERSION}}.min.js"></script>-->
+
+    <!--<script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>-->
+
+
+    <script>
+        /*window.jQuery ||*/
+        document.write('<script src="js/vendor/jquery2.2.2.min.js"><\/script>')
+
+    </script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
