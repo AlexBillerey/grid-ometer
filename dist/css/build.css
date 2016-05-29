@@ -334,6 +334,11 @@ fieldset {
    Author's custom styles
    ========================================================================== */
 
+header,
+section {
+  display: flex;
+}
+
 header {
   padding: 1em 1em 0;
 }
@@ -344,18 +349,14 @@ header {
 
 form {
   padding: 0 1em 1em;
-}
-
-/*see http://danielstern.ca/range.css/?ref=css-tricks#/ */
-
-output {
-  background: orangered;
+  background: rgba(216, 210, 40, 0.29);
+  width: 100%;
 }
 
 input[type=range] {
   -webkit-appearance: none;
+  margin: 10px 0;
   width: 100%;
-  margin: 1em 0;
 }
 
 input[type=range]:focus {
@@ -364,100 +365,213 @@ input[type=range]:focus {
 
 input[type=range]::-webkit-slider-runnable-track {
   width: 100%;
-  height: 30.6px;
+  height: 12.8px;
   cursor: pointer;
-  box-shadow: 0px 0px 0px #002200, 0px 0px 0px #003c00;
-  background: #ffffff;
-  border-radius: 1px;
-  border: none;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  background: #ac51b5;
+  border-radius: 25px;
+  border: 0px solid #000101;
 }
 
 input[type=range]::-webkit-slider-thumb {
   box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
-  border: solid 1px #656565;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  background: #ffffff;
+  border: 0px solid #000000;
+  height: 20px;
+  width: 39px;
+  border-radius: 7px;
+  background: #65001c;
   cursor: pointer;
   -webkit-appearance: none;
-  margin-top: -10.8px;
+  margin-top: -3.6px;
 }
 
 input[type=range]:focus::-webkit-slider-runnable-track {
-  background: #ffffff;
+  background: #ac51b5;
 }
 
 input[type=range]::-moz-range-track {
   width: 100%;
-  height: 30.6px;
+  height: 12.8px;
   cursor: pointer;
-  box-shadow: 0px 0px 0px #002200, 0px 0px 0px #003c00;
-  background: #ffffff;
-  border-radius: 1px;
-  border: none;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  background: #ac51b5;
+  border-radius: 25px;
+  border: 0px solid #000101;
 }
 
 input[type=range]::-moz-range-thumb {
   box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
-  border: solid 1px #656565;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  background-image: radial-gradient( circle, #ffffff, rgba(101, 101, 101, 0.26));
+  border: 0px solid #000000;
+  height: 20px;
+  width: 39px;
+  border-radius: 7px;
+  background: #65001c;
   cursor: pointer;
-  -webkit-transition: all .25s linear 0s;
-  transition: all .25s linear 0s;
 }
-
-input[type=range]:focus::-moz-range-thumb {
-  background-image: radial-gradient( circle closest-side, #656565, #ffffff);
-  -webkit-transition: all .25s linear 0s;
-  transition: all .25s linear 0s;
-}
-
-
 
 input[type=range]::-ms-track {
   width: 100%;
-  height: 30.6px;
+  height: 12.8px;
   cursor: pointer;
+  animate: 0.2s;
   background: transparent;
   border-color: transparent;
+  border-width: 39px 0;
   color: transparent;
 }
 
 input[type=range]::-ms-fill-lower {
-  background: #f7f7f7;
-  border: none;
-  border-radius: 2px;
-  box-shadow: 0px 0px 0px #002200, 0px 0px 0px #003c00;
+  background: #ac51b5;
+  border: 0px solid #000101;
+  border-radius: 50px;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
 }
 
 input[type=range]::-ms-fill-upper {
-  background: #ffffff;
-  border: none;
-  border-radius: 2px;
-  box-shadow: 0px 0px 0px #002200, 0px 0px 0px #003c00;
+  background: #ac51b5;
+  border: 0px solid #000101;
+  border-radius: 50px;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
 }
 
 input[type=range]::-ms-thumb {
   box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
-  border: solid 1px #656565;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  background: #ffffff;
+  border: 0px solid #000000;
+  height: 20px;
+  width: 39px;
+  border-radius: 7px;
+  background: #65001c;
   cursor: pointer;
-  height: 30.6px;
 }
 
 input[type=range]:focus::-ms-fill-lower {
-  background: #ffffff;
+  background: #ac51b5;
 }
 
 input[type=range]:focus::-ms-fill-upper {
-  background: #ffffff;
+  background: #ac51b5;
+}
+
+/*see http://danielstern.ca/range.css/?ref=css-tricks#/ */
+
+/*
+output {
+    background: #e6eab9;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+    margin: 1em 0;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 30.6px;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px #002200, 0px 0px 0px #003c00;
+    background: #ffffff;
+    border-radius: 1px;
+    border: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+    border: solid 1px #656565;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -10.8px;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ffffff;
+}
+
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 30.6px;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px #002200, 0px 0px 0px #003c00;
+    background: #ffffff;
+    border-radius: 1px;
+    border: none;
+}
+
+input[type=range]::-moz-range-thumb {
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+    border: solid 1px #656565;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-image: radial-gradient(circle, #ffffff, rgba(101, 101, 101, 0.26));
+    cursor: pointer;
+    -webkit-transition: all .25s linear 0s;
+    transition: all .25s linear 0s;
+}
+
+input[type=range]:focus::-moz-range-thumb {
+    background-image: radial-gradient(circle closest-side, #656565, #ffffff);
+    -webkit-transition: all .25s linear 0s;
+    transition: all .25s linear 0s;
+}
+
+input[type=range]:after::-moz-range-thumb {
+}
+
+input[type=range]::-ms-track {
+    width: 100%;
+    height: 30.6px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+input[type=range]::-ms-fill-lower {
+    background: #f7f7f7;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0px 0px 0px #002200, 0px 0px 0px #003c00;
+}
+
+input[type=range]::-ms-fill-upper {
+    background: #ffffff;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0px 0px 0px #002200, 0px 0px 0px #003c00;
+}
+
+input[type=range]::-ms-thumb {
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+    border: solid 1px #656565;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+    height: 30.6px;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+    background: #ffffff;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+    background: #ffffff;
+}*/
+
+.column {
+  flex-direction: column;
 }
 
 /* ==========================================================================
@@ -508,7 +622,7 @@ input[type=range]:focus::-ms-fill-upper {
     width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
-    max-width: 960px;
+    max-width: 1200px;
     padding: 0 1em 0 .5em;
     transition: all .25s linear 0s;
   }
@@ -531,7 +645,6 @@ input[type=range]:focus::-ms-fill-upper {
     flex-shrink: 0;
     border: solid 1px #000;
     border-top: 0;
-    background: pink;
   }
 
   .wrapper,
@@ -541,47 +654,47 @@ input[type=range]:focus::-ms-fill-upper {
   }
 
   .col_span_1_of_12 {
-    flex-basis: 5.8507%;
+    flex-basis: 5.5833%;
   }
 
   .col_span_2_of_12 {
-    flex-basis: 14.4097%;
+    flex-basis: 14.1667%;
   }
 
   .col_span_3_of_12 {
-    flex-basis: 22.9688%;
+    flex-basis: 22.7500%;
   }
 
   .col_span_4_of_12 {
-    flex-basis: 31.5278%;
+    flex-basis: 31.3333%;
   }
 
   .col_span_5_of_12 {
-    flex-basis: 40.0868%;
+    flex-basis: 39.9167%;
   }
 
   .col_span_6_of_12 {
-    flex-basis: 48.6458%;
+    flex-basis: 48.5000%;
   }
 
   .col_span_7_of_12 {
-    flex-basis: 57.2049%;
+    flex-basis: 57.0833%;
   }
 
   .col_span_8_of_12 {
-    flex-basis: 65.7639%;
+    flex-basis: 65.6667%;
   }
 
   .col_span_9_of_12 {
-    flex-basis: 74.3229%;
+    flex-basis: 74.2500%;
   }
 
   .col_span_10_of_12 {
-    flex-basis: 82.8819%;
+    flex-basis: 82.8333%;
   }
 
   .col_span_11_of_12 {
-    flex-basis: 91.4410%;
+    flex-basis: 91.4167%;
   }
 
   .col_span_12_of_12 {
@@ -598,7 +711,7 @@ input[type=range]:focus::-ms-fill-upper {
 @media print,
 (-webkit-min-device-pixel-ratio: 1.25),
 (min-resolution: 1.25dppx),
-(min -resolution: 120dpi) {
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
